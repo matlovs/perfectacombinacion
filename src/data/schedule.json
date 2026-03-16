@@ -1,0 +1,331 @@
+[
+  {
+    "categoria": "Area Latina",
+    "corso": "Caraibico Base",
+    "sottotitolo": "Salsa e Bachata",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano",        "sede": "Via P. Picasso 25",        "orario": "20:55" },
+      { "giorno": "Lunedì",    "città": "Legnano",        "sede": "Via S. Quasimodo 18",      "orario": "20:50" },
+      { "giorno": "Martedì",   "città": "Busto Arsizio",  "sede": "Via Don Albertario 10",    "orario": "20:20" },
+      { "giorno": "Martedì",   "città": "Legnano",        "sede": "Via S. Quasimodo 18",      "orario": "21:45" },
+      { "giorno": "Mercoledì", "città": "Legnano",        "sede": "Via S. Quasimodo 18",      "orario": "20:45" },
+      { "giorno": "Mercoledì", "città": "Busto Arsizio",  "sede": "Via Del Bosco 41",         "orario": "21:10" },
+      { "giorno": "Venerdì",   "città": "Legnano",        "sede": "Via S. Bernardino 45",     "orario": "17:00" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Caraibico Intermedio 1",
+    "sottotitolo": "Salsa e Bachata · 1 anno di esperienza",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano",       "sede": "Via S. Quasimodo 18",    "orario": "21:40" },
+      { "giorno": "Martedì",   "città": "Busto Arsizio", "sede": "Via Don Albertario 10",  "orario": "21:10" },
+      { "giorno": "Mercoledì", "città": "Legnano",       "sede": "Via S. Quasimodo 18",    "orario": "21:00" },
+      { "giorno": "Giovedì",   "città": "Legnano",       "sede": "Via S. Quasimodo 18",    "orario": "20:45" },
+      { "giorno": "Sabato",    "città": "Legnano",       "sede": "Via P. Picasso 25",      "orario": "17:50" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Caraibico Intermedio 2",
+    "sottotitolo": "Salsa e Bachata · 2 anni di esperienza",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano",       "sede": "Via S. Quasimodo 18",  "orario": "22:30" },
+      { "giorno": "Martedì",   "città": "Legnano",       "sede": "Via S. Bernardino 45", "orario": "20:50" },
+      { "giorno": "Mercoledì", "città": "Legnano",       "sede": "Via P. Picasso 25",    "orario": "21:30" },
+      { "giorno": "Venerdì",   "città": "Busto Arsizio", "sede": "Via Del Bosco 41",     "orario": "22:00" },
+      { "giorno": "Sabato",    "città": "Legnano",       "sede": "Via P. Picasso 25",    "orario": "18:40" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Caraibico Avanzato",
+    "sottotitolo": "Salsa · 3 anni di esperienza",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano", "sede": "Via P. Picasso 25",    "orario": "22:30" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via P. Picasso 25",    "orario": "22:30" },
+      { "giorno": "Giovedì",   "città": "Legnano", "sede": "Via S. Quasimodo 18",  "orario": "20:20" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Bachata Sensual Base",
+    "sottotitolo": "Almeno 1 anno di esperienza in bachata",
+    "lezioni": [
+      { "giorno": "Lunedì",  "città": "Legnano", "sede": "Via P. Picasso 25",   "orario": "20:50" },
+      { "giorno": "Martedì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "21:40" },
+      { "giorno": "Giovedì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "20:00" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Bachata Sensual Intermedio/Avanzato",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",  "città": "Legnano", "sede": "Via P. Picasso 25",   "orario": "21:40" },
+      { "giorno": "Martedì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "22:30" }
+    ]
+  },
+  {
+    "categoria": "Area Latina",
+    "corso": "Salsa Cubana",
+    "sottotitolo": "Livello open · almeno 1 anno di esperienza",
+    "lezioni": [
+      { "giorno": "Martedì",   "città": "Legnano", "sede": "Via S. Quasimodo 18",  "orario": "20:00" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via S. Bernardino 45", "orario": "22:15" }
+    ]
+  },
+  {
+    "categoria": "Tango Argentino",
+    "corso": "Tango Argentino Base",
+    "sottotitolo": "Con il Maestro Alessandro Antonucci",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "21:40" }
+    ]
+  },
+  {
+    "categoria": "Tango Argentino",
+    "corso": "Tango Argentino Intermedio/Avanzato",
+    "sottotitolo": "Con il Maestro Alessandro Antonucci",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "22:30" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Principianti",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",       "orario": "20:40" },
+      { "giorno": "Giovedì", "città": "Busto Arsizio", "sede": "Via Don Albertario 10",  "orario": "21:00" },
+      { "giorno": "Venerdì", "città": "Legnano",        "sede": "Via P. Picasso 25",      "orario": "20:50" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Base 2° Anno",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "22:10" },
+      { "giorno": "Mercoledì", "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "21:40" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Intermedio",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "21:30" },
+      { "giorno": "Venerdì", "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "21:40" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Intermedio/Avanzato",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",  "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "21:20" },
+      { "giorno": "Giovedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "21:20" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Avanzato",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Mercoledì", "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "20:50" },
+      { "giorno": "Giovedì",   "città": "Busto Arsizio",  "sede": "Via Del Bosco 41",  "orario": "22:10" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Liscio Superavanzato",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",  "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "20:30" },
+      { "giorno": "Giovedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "20:30" }
+    ]
+  },
+  {
+    "categoria": "Liscio e Ballo da Sala",
+    "corso": "Cumbia / Latino",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "22:20" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Balli di Gruppo 1° Anno",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Busto Arsizio", "sede": "Via Del Bosco 41",       "orario": "18:50" },
+      { "giorno": "Martedì",   "città": "Busto Arsizio", "sede": "Via Don Albertario 10",  "orario": "19:30" },
+      { "giorno": "Mercoledì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",       "orario": "19:50" },
+      { "giorno": "Mercoledì", "città": "Legnano",        "sede": "Via S. Bernardino 45",   "orario": "20:00" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Balli di Gruppo 2° Anno",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì",   "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "19:50" },
+      { "giorno": "Martedì",   "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "20:00" },
+      { "giorno": "Mercoledì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "20:40" },
+      { "giorno": "Venerdì",   "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "19:10" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Balli di Gruppo 3° Anno",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "19:00" },
+      { "giorno": "Venerdì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "19:30" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Balli di Gruppo Open",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",  "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "19:40" },
+      { "giorno": "Venerdì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41", "orario": "20:20" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Boogie Woogie",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Busto Arsizio", "sede": "Via Don Albertario 10", "orario": "22:00" }
+    ]
+  },
+  {
+    "categoria": "Balli di Gruppo",
+    "corso": "Country Line Dance",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì", "città": "Legnano",        "sede": "Via S. Quasimodo 18",   "orario": "21:00" },
+      { "giorno": "Giovedì", "città": "Busto Arsizio",  "sede": "Via Don Albertario 10", "orario": "20:10" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Zumba Fitness",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "20:00" },
+      { "giorno": "Martedì",   "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "19:10" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "20:00" },
+      { "giorno": "Giovedì",   "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "18:45" },
+      { "giorno": "Venerdì",   "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "20:00" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Latin Fitness",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via S. Bernardino 45", "orario": "19:00" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Pilates",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano",       "sede": "Via P. Picasso 25", "orario": "10:30" },
+      { "giorno": "Lunedì",    "città": "Legnano",       "sede": "Via P. Picasso 25", "orario": "19:10" },
+      { "giorno": "Mercoledì", "città": "Legnano",       "sede": "Via P. Picasso 25", "orario": "19:10" },
+      { "giorno": "Giovedì",   "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "09:30" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Posturale",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Mercoledì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "19:00" },
+      { "giorno": "Giovedì",   "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "19:30" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Yoga",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "18:20" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Pole Dance",
+    "sottotitolo": "Presso Sporting Club",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "19:50" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "20:00" },
+      { "giorno": "Venerdì",   "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "20:00 – 21:00" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Cerchio Aereo",
+    "sottotitolo": "Presso Sporting Club",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "13:00" },
+      { "giorno": "Martedì",   "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "18:00 – 19:00" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "11:15 (Senior)" },
+      { "giorno": "Sabato",    "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "10:00 – 11:00" }
+    ]
+  },
+  {
+    "categoria": "Fitness e Aeree",
+    "corso": "Amaca Aerea",
+    "sottotitolo": "Presso Sporting Club",
+    "lezioni": [
+      { "giorno": "Lunedì",    "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "09:00" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "09:00" },
+      { "giorno": "Venerdì",   "città": "Legnano", "sede": "Via S. Quasimodo 18", "orario": "09:00" }
+    ]
+  },
+  {
+    "categoria": "Bambini e Ragazzi",
+    "corso": "Zumba Kids 3–5 anni",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì",   "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "16:40" },
+      { "giorno": "Mercoledì", "città": "Busto Arsizio",  "sede": "Via Del Bosco 41",  "orario": "17:20" },
+      { "giorno": "Sabato",    "città": "Legnano",        "sede": "Via P. Picasso 25", "orario": "10:30" }
+    ]
+  },
+  {
+    "categoria": "Bambini e Ragazzi",
+    "corso": "Zumba Kids 6–11 anni",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì",   "città": "Legnano",       "sede": "Via P. Picasso 25", "orario": "18:20" },
+      { "giorno": "Mercoledì", "città": "Busto Arsizio", "sede": "Via Del Bosco 41",  "orario": "18:10" },
+      { "giorno": "Giovedì",   "città": "Legnano",       "sede": "Via P. Picasso 25", "orario": "18:00" }
+    ]
+  },
+  {
+    "categoria": "Bambini e Ragazzi",
+    "corso": "Latin Style Kids 6–11 anni",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Martedì",   "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "17:30 (1° anno)" },
+      { "giorno": "Mercoledì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "17:30 (2° anno)" }
+    ]
+  },
+  {
+    "categoria": "Bambini e Ragazzi",
+    "corso": "Latin Style Ragazzi 12–16 anni",
+    "sottotitolo": "",
+    "lezioni": [
+      { "giorno": "Venerdì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "17:30 (1° anno)" },
+      { "giorno": "Venerdì", "città": "Legnano", "sede": "Via P. Picasso 25", "orario": "18:20 (2° anno)" }
+    ]
+  }
+]

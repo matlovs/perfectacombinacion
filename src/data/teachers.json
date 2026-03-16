@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mimmo",
+    "photo": "/images/teachers/mimmo.jpg",
+    "areas": ["Balli di gruppo"]
+  },
+  {
+    "name": "Diego",
+    "photo": "/images/teachers/diego.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Daniele",
+    "photo": "/images/teachers/daniele.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Noemi",
+    "photo": "/images/teachers/noemi.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Valeria",
+    "photo": "/images/teachers/valeria.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Gaia",
+    "photo": "/images/teachers/gaia.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Giada",
+    "photo": "/images/teachers/giada.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Gabriele",
+    "photo": "/images/teachers/gabriele.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Veronica",
+    "photo": "/images/teachers/veronica.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Marika",
+    "photo": "/images/teachers/marika.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Alice",
+    "photo": "/images/teachers/alice.jpg",
+    "areas": ["Aeree"]
+  },
+  {
+    "name": "Alessandro",
+    "photo": "/images/teachers/alessandro.jpg",
+    "areas": ["Tango"]
+  }
+]
