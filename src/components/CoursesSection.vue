@@ -169,6 +169,7 @@ function mapsUrl(slot) {
   flex: 0 0 0% !important;
   flex-grow: 0 !important;
   margin: 0 !important;
+  max-height: 0 !important;
 }
 
 .courses-grid.is-expanded .card-wrap--active {

@@ -20,7 +20,10 @@
           </button>
 
           <!-- Finestra slide -->
-          <div class="slider-viewport">
+          <div class="slider-viewport"
+            @touchstart.passive="onTouchStart($event, showIdx)"
+            @touchend.passive="onTouchEnd($event, showIdx, show.images.length)"
+          >
             <div
               class="slider-track"
               :style="{ transform: `translateX(calc(-${offsets[showIdx]} * (100% / ${visible})))` }"
@@ -160,6 +163,19 @@ function onKeydown(e) {
 
 onMounted(() => window.addEventListener('keydown', onKeydown))
 onUnmounted(() => window.removeEventListener('keydown', onKeydown))
+
+let touchStartX = 0
+
+function onTouchStart(e, showIdx) {
+  touchStartX = e.touches[0].clientX
+}
+
+function onTouchEnd(e, showIdx, total) {
+  const diff = touchStartX - e.changedTouches[0].clientX
+  if (Math.abs(diff) < 40) return
+  if (diff > 0) next(showIdx, total)
+  else prev(showIdx)
+}
 
 function onImgError(event) {
   event.target.style.display = 'none'

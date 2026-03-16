@@ -183,6 +183,7 @@ strong {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-height: 100dvh;
   text-align: center;
   padding: 6rem 2rem 4rem;
   background: url('/images/background.jpg') center center / cover no-repeat;
@@ -1154,8 +1155,19 @@ strong {
   body { font-size: 16px; }
 
   #three .locations-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .location-card {
+    aspect-ratio: auto;
+    padding: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .location-card .icon { font-size: 1.5rem; }
+  .location-card .info h3 { font-size: 1rem; }
+  .location-card .info p { font-size: 0.85rem; }
+  .location-card .info .city { font-size: 0.75rem; }
 
   #header h1 { font-size: 2.2rem; }
 
@@ -1182,6 +1194,23 @@ strong {
   .slide-item {
     flex: 0 0 100%;
   }
+
+  .slider-wrapper {
+    position: relative;
+  }
+
+  .slider-wrapper .slider-arrow {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.85rem;
+  }
+
+  .slider-wrapper .slider-arrow.left { left: 0.4rem; }
+  .slider-wrapper .slider-arrow.right { right: 0.4rem; }
 
   .wrapper { padding: 3.5rem 0; }
 
