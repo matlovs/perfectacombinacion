@@ -1220,7 +1220,14 @@ strong {
 
   #contact {
     background-attachment: scroll;
+    background-size: auto 100%;
     background-position: 75% bottom;
+  }
+
+  #cta {
+    background-attachment: scroll;
+    background-size: auto 100%;
+    background-position: center center;
   }
 
   #announcement .details {

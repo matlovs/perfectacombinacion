@@ -76,6 +76,8 @@
         v-if="lightboxImage"
         class="lightbox-overlay"
         @click.self="closeLightbox"
+        @touchstart.passive="onLightboxTouchStart"
+        @touchend.passive="onLightboxTouchEnd"
       >
         <span class="lightbox-close" @click="closeLightbox">
           <i class="fas fa-times"></i>
@@ -161,10 +163,46 @@ function onKeydown(e) {
   else if (e.key === 'Escape') closeLightbox()
 }
 
-onMounted(() => window.addEventListener('keydown', onKeydown))
-onUnmounted(() => window.removeEventListener('keydown', onKeydown))
+// Auto-scroll
+const autoIntervals = []
+
+function startAutoScroll() {
+  shows.forEach((show, showIdx) => {
+    const interval = setInterval(() => {
+      if (lightboxImage.value) return
+      if (offsets.value[showIdx] >= show.images.length - visible.value) {
+        offsets.value[showIdx] = 0
+      } else {
+        offsets.value[showIdx]++
+      }
+    }, 3000)
+    autoIntervals.push(interval)
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', onKeydown)
+  startAutoScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  autoIntervals.forEach(clearInterval)
+})
 
 let touchStartX = 0
+let lightboxTouchStartX = 0
+
+function onLightboxTouchStart(e) {
+  lightboxTouchStartX = e.touches[0].clientX
+}
+
+function onLightboxTouchEnd(e) {
+  const diff = lightboxTouchStartX - e.changedTouches[0].clientX
+  if (Math.abs(diff) < 40) return
+  if (diff > 0) lightboxNext()
+  else lightboxPrev()
+}
 
 function onTouchStart(e, showIdx) {
   touchStartX = e.touches[0].clientX
