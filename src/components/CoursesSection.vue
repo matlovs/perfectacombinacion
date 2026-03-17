@@ -55,7 +55,7 @@
                 </div>
 
                 <transition name="fade" mode="out-in">
-                  <div v-if="selectedSchedule" :key="selectedCorso">
+                  <div v-if="selectedSchedule" :key="selectedCorso" ref="scheduleRef">
                     <p v-if="selectedSchedule.sottotitolo" class="schedule-subtitle">
                       {{ selectedSchedule.sottotitolo }}
                     </p>

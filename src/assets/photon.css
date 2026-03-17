@@ -1185,12 +1185,14 @@ strong {
   }
 
   .course-selector {
-    gap: 0.4rem;
+    gap: 0.65rem;
   }
 
   .course-btn {
     font-size: 0.82rem;
     padding: 0.45rem 0.9rem;
+    width: 220px;
+    text-align: center;
   }
 
   .slide-item {
