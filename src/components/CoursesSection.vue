@@ -86,7 +86,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, nextTick } from 'vue'
 import schedule from '../data/schedule.json'
 
 const DAY_ORDER = ['Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato','Domenica']
@@ -133,6 +133,9 @@ function selectCategory(name) {
   selectedCategory.value = name
   selectedCorso.value = null
   isExpanded.value = true
+  nextTick(() => {
+    document.getElementById('two')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  })
 }
 
 function closeExpanded() {

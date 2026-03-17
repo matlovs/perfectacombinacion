@@ -51,10 +51,16 @@
   </section>
 
   <Teleport to="body">
-    <div v-if="lightbox" class="lightbox-overlay" @click.self="closeLightbox">
+    <div v-if="lightbox" class="lightbox-overlay" @click.self="closeLightbox"
+      @touchstart.passive="onTouchStart"
+      @touchend.passive="onTouchEnd"
+    >
       <span class="lightbox-close" @click="closeLightbox">
         <i class="fas fa-times"></i>
       </span>
+      <button class="lightbox-arrow left" @click="lightboxPrev" :disabled="lightboxIdx === 0">
+        <i class="fas fa-chevron-left"></i>
+      </button>
       <div class="lightbox-content">
         <img :src="lightbox.photo" :alt="lightbox.name" />
         <div class="lightbox-info">
@@ -64,12 +70,15 @@
           </div>
         </div>
       </div>
+      <button class="lightbox-arrow right" @click="lightboxNext" :disabled="lightboxIdx === teachersWithPhoto.length - 1">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </Teleport>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useVisible } from '../composables/useVisible.js'
 import teachers from '../data/teachers.json'
 
@@ -91,15 +100,52 @@ function goToDot(dot) {
   offset.value = Math.min(dot - 1, teachers.length - visible.value)
 }
 
+const teachersWithPhoto = teachers.filter(t => t.photo)
 const lightbox = ref(null)
+const lightboxIdx = ref(0)
 
 function openLightbox(teacher) {
-  lightbox.value = teacher
+  const idx = teachersWithPhoto.findIndex(t => t.name === teacher.name)
+  lightboxIdx.value = idx
+  lightbox.value = teachersWithPhoto[idx]
+}
+
+function lightboxPrev() {
+  if (lightboxIdx.value > 0) {
+    lightboxIdx.value--
+    lightbox.value = teachersWithPhoto[lightboxIdx.value]
+  }
+}
+
+function lightboxNext() {
+  if (lightboxIdx.value < teachersWithPhoto.length - 1) {
+    lightboxIdx.value++
+    lightbox.value = teachersWithPhoto[lightboxIdx.value]
+  }
 }
 
 function closeLightbox() {
   lightbox.value = null
 }
+
+let touchStartX = 0
+function onTouchStart(e) { touchStartX = e.touches[0].clientX }
+function onTouchEnd(e) {
+  const diff = touchStartX - e.changedTouches[0].clientX
+  if (Math.abs(diff) < 40) return
+  if (diff > 0) lightboxNext()
+  else lightboxPrev()
+}
+
+function onKeydown(e) {
+  if (!lightbox.value) return
+  if (e.key === 'ArrowLeft') lightboxPrev()
+  else if (e.key === 'ArrowRight') lightboxNext()
+  else if (e.key === 'Escape') closeLightbox()
+}
+
+onMounted(() => window.addEventListener('keydown', onKeydown))
+onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 </script>
 
 <style scoped>

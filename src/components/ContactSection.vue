@@ -16,7 +16,12 @@
               :key="link.href"
               :href="link.href"
               class="contact-link"
-            >{{ link.text }}</a>
+              :target="link.external ? '_blank' : undefined"
+              :rel="link.external ? 'noopener' : undefined"
+            >
+              <i v-if="link.icon" :class="link.icon"></i>
+              {{ link.text }}
+            </a>
           </div>
         </div>
       </div>
@@ -42,9 +47,12 @@ const contacts = [
     ],
   },
   {
-    icon: 'fas fa-map-marker-alt',
-    label: 'Dove siamo',
-    value: 'Legnano & Busto Arsizio (VA)',
+    icon: 'fas fa-share-alt',
+    label: 'Social',
+    links: [
+      { href: 'https://www.facebook.com/perfectacombinacion', text: 'Facebook', icon: 'fab fa-facebook-f', external: true },
+      { href: 'https://www.instagram.com/perfectacombinacion', text: 'Instagram', icon: 'fab fa-instagram', external: true },
+    ],
   },
 ]
 </script>
