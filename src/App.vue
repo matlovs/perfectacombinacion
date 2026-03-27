@@ -10,10 +10,12 @@
     <GallerySection />
     <ContactSection />
     <FooterSection />
+    <CookieBanner />
   </div>
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import AnnouncementSection from './components/AnnouncementSection.vue'
@@ -24,4 +26,12 @@ import GallerySection from './components/GallerySection.vue'
 import CtaSection from './components/CtaSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import CookieBanner from './components/CookieBanner.vue'
+import { useCookieConsent } from './composables/useCookieConsent.js'
+
+const { loadSavedConsent } = useCookieConsent()
+
+onMounted(() => {
+  loadSavedConsent()
+})
 </script>

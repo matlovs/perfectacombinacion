@@ -35,6 +35,9 @@
 
     <div class="footer-bottom">
       <p>&copy; {{ year }} Perfecta Combinacion &mdash; Tutti i diritti riservati.</p>
+      <p class="footer-privacy-links">
+        <button class="footer-cookie-btn" @click="openSettings">Gestisci cookie</button>
+      </p>
     </div>
 
   </footer>
@@ -42,6 +45,9 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useCookieConsent } from '../composables/useCookieConsent.js'
+
+const { openSettings } = useCookieConsent()
 
 const year = new Date().getFullYear()
 
@@ -307,6 +313,27 @@ onBeforeUnmount(() => {
   color: rgba(255,255,255,0.25);
   font-size: 0.8rem;
   margin: 0;
+}
+
+.footer-privacy-links {
+  margin-top: 0.3rem;
+}
+
+.footer-cookie-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.2);
+  font-family: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.18s;
+}
+
+.footer-cookie-btn:hover {
+  color: #f450a5;
 }
 
 /* ---- Responsive ---- */
