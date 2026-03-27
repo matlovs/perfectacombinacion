@@ -1,17 +1,22 @@
 [
   {
-    "name": "Mimmo",
-    "photo": "/images/teachers/mimmo.jpg",
-    "areas": ["Balli di gruppo"]
-  },
-  {
     "name": "Diego",
     "photo": "/images/teachers/diego.jpg",
     "areas": ["Caraibico"]
   },
   {
-    "name": "Daniele",
+    "name": "Mimmo",
+    "photo": "/images/teachers/mimmo.jpg",
+    "areas": ["Balli di gruppo"]
+  },
+  {
+    "name": "Daniele F.",
     "photo": "/images/teachers/daniele.jpg",
+    "areas": ["Caraibico"]
+  },
+  {
+    "name": "Daniele S.",
+    "photo": "/images/teachers/gabriele.jpg",
     "areas": ["Caraibico"]
   },
   {
