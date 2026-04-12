@@ -3,9 +3,10 @@
     <canvas ref="canvas" class="stars-canvas"></canvas>
     <div class="inner">
       <div class="logo">
+        <h1 class="sr-only">Perfecta Combinación – Scuola di Ballo a Legnano e Busto Arsizio</h1>
         <img
           src="/images/logo_dark-300x105.png"
-          alt="Perfecta Combinacion"
+          alt="Perfecta Combinación"
           fetchpriority="high"
           decoding="async"
         />
