@@ -19,12 +19,18 @@ const links = [
 
 const bgColor = ref('rgba(17,17,17,0)')
 
+let ticking = false
 function onScroll() {
-  const hero = document.getElementById('header')
-  if (!hero) return
-  const heroHeight = hero.offsetHeight
-  const progress = Math.min(window.scrollY / heroHeight, 1)
-  bgColor.value = `rgba(17,17,17,${(progress * 0.95).toFixed(3)})`
+  if (ticking) return
+  ticking = true
+  requestAnimationFrame(() => {
+    const hero = document.getElementById('header')
+    if (hero) {
+      const progress = Math.min(window.scrollY / hero.offsetHeight, 1)
+      bgColor.value = `rgba(17,17,17,${progress * 0.95})`
+    }
+    ticking = false
+  })
 }
 
 onMounted(() => {

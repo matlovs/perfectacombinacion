@@ -40,6 +40,7 @@
                   :src="img.src"
                   :alt="img.alt || show.title"
                   loading="lazy"
+                  decoding="async"
                   @error="onImgError($event)"
                 />
                 <div class="overlay"><i class="fas fa-expand"></i></div>
@@ -186,13 +187,20 @@ function stopAutoScroll() {
   autoIntervals.length = 0
 }
 
+function onVisibilityChange() {
+  if (document.hidden) stopAutoScroll()
+  else if (!lightboxImage.value) startAutoScroll()
+}
+
 onMounted(() => {
   window.addEventListener('keydown', onKeydown)
+  document.addEventListener('visibilitychange', onVisibilityChange)
   startAutoScroll()
 })
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown)
+  document.removeEventListener('visibilitychange', onVisibilityChange)
   stopAutoScroll()
 })
 
