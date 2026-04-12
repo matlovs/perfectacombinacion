@@ -15,9 +15,9 @@
           <div class="slider-track" :style="{ transform: `translateX(calc(-${offset} * (100% / ${visible})))` }">
             <div class="teacher-card" v-for="(teacher, idx) in teachers" :key="teacher.name" :class="{ center: idx === offset + Math.floor(visible / 2) }">
               <div class="teacher-photo" @click="teacher.photo && openLightbox(teacher)">
-                <img v-if="teacher.photo" :src="teacher.photo" :alt="teacher.name" />
+                <img v-if="teacher.photo" :src="teacher.photo" :alt="teacher.name" @error="onImgError" />
                 <div v-else class="photo-placeholder">
-                  <i class="fas fa-user"></i>
+                  <img src="/images/logo_dark-300x105.png" alt="Perfecta Combinacion" class="logo-placeholder" />
                 </div>
                 <div class="photo-overlay" v-if="teacher.photo">
                   <i class="fas fa-expand"></i>
@@ -144,6 +144,11 @@ function onKeydown(e) {
   else if (e.key === 'Escape') closeLightbox()
 }
 
+function onImgError(e) {
+  e.target.src = '/images/logo_dark-300x105.png'
+  e.target.classList.add('logo-fallback')
+}
+
 onMounted(() => window.addEventListener('keydown', onKeydown))
 onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 </script>
@@ -247,6 +252,20 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
   justify-content: center;
   font-size: 3.5rem;
   color: rgba(255,255,255,0.2);
+}
+
+.logo-placeholder {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.teacher-photo img.logo-fallback {
+  object-fit: contain;
+  object-position: center;
+  padding: 12%;
+  background: rgba(255,255,255,0.04);
 }
 
 .teacher-info {

@@ -135,6 +135,7 @@ function openLightbox(showIdx, idx) {
   lightboxShowIdx.value = showIdx
   lightboxIdx.value = idx
   lightboxImage.value = img
+  stopAutoScroll()
 }
 
 function lightboxPrev() {
@@ -154,6 +155,7 @@ function lightboxNext() {
 
 function closeLightbox() {
   lightboxImage.value = null
+  startAutoScroll()
 }
 
 function onKeydown(e) {
@@ -169,7 +171,6 @@ const autoIntervals = []
 function startAutoScroll() {
   shows.forEach((show, showIdx) => {
     const interval = setInterval(() => {
-      if (lightboxImage.value) return
       if (offsets.value[showIdx] >= show.images.length - visible.value) {
         offsets.value[showIdx] = 0
       } else {
@@ -180,6 +181,11 @@ function startAutoScroll() {
   })
 }
 
+function stopAutoScroll() {
+  autoIntervals.forEach(clearInterval)
+  autoIntervals.length = 0
+}
+
 onMounted(() => {
   window.addEventListener('keydown', onKeydown)
   startAutoScroll()
@@ -187,7 +193,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown)
-  autoIntervals.forEach(clearInterval)
+  stopAutoScroll()
 })
 
 let touchStartX = 0
