@@ -53,8 +53,8 @@ const { canvas, onMouseMove } = useStarParticles()
 const year = new Date().getFullYear()
 
 const socials = [
-  { label: 'Facebook',  href: 'https://www.facebook.com/perfectacombinacion',  icon: 'fab fa-facebook-f' },
-  { label: 'Instagram', href: 'https://www.instagram.com/perfectacombinacion', icon: 'fab fa-instagram' },
+  { label: 'Facebook',  href: 'https://www.facebook.com/PerfectaCombinacionCorsiDiBallo',  icon: 'fab fa-facebook-f' },
+  { label: 'Instagram', href: 'https://www.instagram.com/perfecta_combinacion_', icon: 'fab fa-instagram' },
   { label: 'Email',     href: 'mailto:info@perfectacombinacion.it',             icon: 'fas fa-envelope' },
 ]
 </script>

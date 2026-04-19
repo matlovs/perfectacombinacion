@@ -15,12 +15,11 @@
         </p>
         <div class="actions">
           <a
-            href="https://perfectacombinacion.it/wp-content/uploads/2025/07/VOLANTINO-STAGIONE-2025-2026.pdf"
-            target="_blank"
-            rel="noopener"
+            href="/docs/VOLANTINO-STAGIONE-2025-2026.pdf"
+            download
             class="button primary"
           >
-            <i class="fa fa-file-pdf"></i> Scarica il volantino – Stagione 2025/2026
+            <i class="fa fa-download"></i> Scarica il volantino – Stagione 2025/2026
           </a>
         </div>
       </div>

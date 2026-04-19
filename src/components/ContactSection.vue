@@ -50,8 +50,8 @@ const contacts = [
     icon: 'fas fa-share-alt',
     label: 'Social',
     links: [
-      { href: 'https://www.facebook.com/perfectacombinacion', text: 'Facebook', icon: 'fab fa-facebook-f', external: true },
-      { href: 'https://www.instagram.com/perfectacombinacion', text: 'Instagram', icon: 'fab fa-instagram', external: true },
+      { href: 'https://www.facebook.com/PerfectaCombinacionCorsiDiBallo', text: 'Facebook', icon: 'fab fa-facebook-f', external: true },
+      { href: 'https://www.instagram.com/perfecta_combinacion_', text: 'Instagram', icon: 'fab fa-instagram', external: true },
     ],
   },
 ]

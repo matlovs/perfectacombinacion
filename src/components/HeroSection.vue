@@ -14,12 +14,12 @@
 <div class="actions">
         <a href="#two" class="button primary">Scopri i corsi</a>
         <a
-          href="https://perfectacombinacion.it/wp-content/uploads/2025/07/VOLANTINO-STAGIONE-2025-2026.pdf"
+          href="/docs/VOLANTINO-STAGIONE-2025-2026.pdf"
           target="_blank"
           rel="noopener"
           class="button outline"
         >
-          <i class="fa fa-download"></i> Volantino 25/26
+          Volantino 25/26
         </a>
       </div>
     </div>
