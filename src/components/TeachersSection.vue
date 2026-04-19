@@ -62,7 +62,7 @@
         <i class="fas fa-chevron-left"></i>
       </button>
       <div class="lightbox-content">
-        <img :src="lightbox.photo" :alt="lightbox.name" />
+        <img :src="lightbox.photo" :alt="lightbox.name" @error="onImgError" />
         <div class="lightbox-info">
           <h3>{{ lightbox.name }}</h3>
           <div class="teacher-tags">
